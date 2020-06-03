@@ -26,6 +26,7 @@ jspm_packages/
 tmp/
 
 # General
+app/dist/
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -40,7 +41,7 @@ tmp/
 .com.apple.timemachine.donotpresent
 
 ### VSCode
-
+.vscode/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
