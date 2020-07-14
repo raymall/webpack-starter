@@ -9,11 +9,6 @@ const HtmlBeautifyPlugin = require('html-beautify-webpack-plugin');
 const imageminMozjpeg = require('imagemin-mozjpeg');
 const ImageminPlugin = require('imagemin-webpack-plugin').default;
 
-/*===============
-  TO-DOs:
-  1. Read files in views/ to generate pages
-  2. Pass 'title' from files in views/
-===============*/
 const pages = [
   {
     title: 'Homepage',
@@ -94,7 +89,6 @@ module.exports = {
     }]),
     new ImageminPlugin({
       pngquant: ({quality: '50'}),
-      // Test this plugin inside CopyWebpackPlugin
       plugins: [imageminMozjpeg({quality: '50'})]
     }),
     new CopyWebpackPlugin([
